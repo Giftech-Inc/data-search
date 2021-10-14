@@ -1,0 +1,1299 @@
+@charset "UTF-8";
+/* CSS Document */
+a:hover img {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+/*--------------------　ヘッターボタン　--------------------*/
+.btn {
+  display: inline-block;
+  width: 230px;
+  padding: 6px 0;
+  margin: 40px 50px 0 0;
+  text-decoration: none;
+  background: #253e77;
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px 5px #253e77;
+  border: dashed 1px #fff;
+  font-size: 20px;
+  letter-spacing: 0.4em;
+}
+.btn:hover {
+  background: #152445;
+  box-shadow: 0px 0px 0px 5px #152445;
+  color: #e2e2e2;
+  text-decoration: none;
+}
+.btn:last-child {
+  margin-right: 0;
+}
+/*--------------------　メインコンテンツ　大枠設定  ＊変更不要＊　--------------------*/
+#contents {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 30px;
+  background: none;
+  /*border:1px solid #ccc;*/
+}
+/* ------------------ メイン ----------------------- */
+#contents_left {
+  float: left;
+  width: 70%;
+}
+/* ------------------ サイドバー ------------------- */
+.side_area {
+  float: right;
+  width: 25%;
+  background-color: #fff;
+}
+.side_area .box {
+  margin-bottom: 40px;
+  padding: 6%;
+}
+.side_area h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: solid 3px #01aa3a; /*サイド見出しの下線*/
+}
+.side_area h3 i {
+  margin-right: 12px;
+  vertical-align: middle;
+  color: #01aa3a;
+}
+.side_area li {
+  margin-bottom: 10px;
+}
+.side_area li a {
+  display: block;
+  padding: 0px 0 0px 10px;
+  transition: all 0.3s;
+}
+.side_area li a:hover {
+}
+.side_area li a:hover i {
+}
+/*==================================================================
+
+	.breadcrumb（ぱんくずリスト）
+
+==================================================================*/
+.breadcrumbs {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.breadcrumbs li:first-child {
+  list-style: none;
+}
+.breadcrumbs a {
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs li {
+  float: left;
+  margin-right: 5px;
+  padding-left: 0px;
+  margin-bottom: 15px;
+}
+.breadcrumbs li:after {
+  font-family: FontAwesome;
+  content: ">";
+  padding-left: 10px;
+}
+.breadcrumbs li:last-child:after {
+  content: "";
+}
+/*==================================================================
+
+	ブログ
+
+==================================================================*/
+.blog_box {
+  border: 1px solid #e6e6e6;
+  border-top: 4px solid #ef7e0b; /*記事ボックスの上の色*/
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+.blog_tit {
+  font-family: "Noto Sans Japanese", "游ゴシック体", "Yu Gothic", YuGothic,
+    "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
+    Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 22px;
+  color: #504c43;
+  padding: 20px 20px 6px;
+}
+.blog_content {
+  margin: 20px 25px;
+}
+.blog_content p {
+  margin-bottom: 1em;
+}
+.blog_btn {
+  display: inline-block;
+  margin: 20px 0 0 10px;
+  padding: 8px 25px;
+  background-color: #3c404c; /*ボタンの色*/
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  border-radius: 4px;
+  font-family: "Noto Sans Japanese", "游ゴシック体", "Yu Gothic", YuGothic,
+    "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
+    Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin-bottom: 0 !important;
+  transition-property: all;
+  transition: 0.3s linear;
+}
+.blog_btn:hover {
+  color: #fff;
+  background: #505a72;
+}
+.blog_btn a {
+  color: #fff !important;
+}
+.blog_btn a:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+.blog_btn span {
+  position: relative;
+  padding-right: 1em;
+  transition: all 0.3s;
+  color: #fff !important;
+}
+.blog_btn span::after {
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  content: "";
+  margin-top: -5px;
+  border: 7px solid transparent;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-left-color: #fff;
+  transition: all 0.3s;
+}
+.blog_btn:hover span {
+}
+.blog_btn:hover span::after {
+  right: -16px;
+}
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 5px;
+  color: #ef7e0b;
+}
+/* 日付・カテゴリ */
+.blog_class li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.blog_class {
+  margin-bottom: 32px;
+}
+/* カテゴリ */
+.blog_category {
+  clear: both;
+  margin-bottom: 20px;
+  font-family: "Noto Sans Japanese", "游ゴシック体", "Yu Gothic", YuGothic,
+    "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
+    Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.blog_category li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #004c36;
+}
+.blog_category li a {
+  padding: 6px 12px 6px 10px;
+  transition: all 0.3s;
+}
+.blog_category li a:hover {
+  color: #fff !important;
+  background: #004c36;
+  text-decoration: none;
+}
+.blog_category li a {
+  color: #004c36 !important;
+  display: block;
+}
+.blog_category li a:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+.blog_category li a:hover .fa-tag {
+  color: #fff !important;
+}
+/* ページャー */
+/*.pager {
+	display: block;
+	font-size: 15px;
+	padding: 9px 8px;
+	margin: 0 auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center!important;
+	font-weight: bold;
+	font-family: 'Noto Sans Japanese', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.current {
+	background: #FDF5E1;
+	color: #004c36;
+	padding: 6px 12px;
+	display: inline;
+	border-radius: 16px;
+	margin: 5px;
+}
+.pager a {
+	margin: 5px;
+	display: inline;
+	text-decoration: none;
+	padding: 6px 12px;
+	margin-right: 6px;
+	border-radius: 16px;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	background: #eee;
+	color: #999;
+}
+.pager a:hover {
+	background: #FDF5E1;
+	color: #004c36;
+}
+.pager a:active {
+	-webkit-box-shadow: 1px 1px 3px -1px rgba(0,0,0, .55);
+	-moz-box-shadow: 1px 1px 3px -1px rgba(0,0,0, .55);
+	box-shadow: 1px 1px 3px -1px rgba(0,0,0, .55);
+}*/
+/* ページャー ----------------------------------------------------- */
+.pager {
+  display: block;
+  font-size: 15px;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center !important;
+  font-weight: bold;
+}
+.pager a,
+.pager span {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  text-decoration: none;
+  margin: 5px 5px 8px;
+  border-radius: 50%;
+  line-height: 38px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #eee;
+  color: #999;
+}
+.pager a:hover,
+.pager .current {
+  background: #fdf5e1;
+  /*color: #fff;*/
+}
+.pager a:active {
+  -webkit-box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.55);
+  box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.55);
+}
+/*==================================================================
+
+	ブログ エディター用
+
+==================================================================*/
+/**
+ * 8.0 Alignments
+ */
+.alignleft {
+  display: inline;
+  float: left;
+}
+.alignright {
+  display: inline;
+  float: right;
+}
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft {
+  margin: 0.4em 1.6em 1.6em 0;
+}
+blockquote.alignright,
+.wp-caption.alignright,
+img.alignright {
+  margin: 0.4em 0 1.6em 1.6em;
+}
+blockquote.aligncenter,
+.wp-caption.aligncenter,
+img.aligncenter {
+  clear: both;
+  margin-top: 0.4em;
+  margin-bottom: 1.6em;
+}
+.wp-caption.alignleft,
+.wp-caption.alignright,
+.wp-caption.aligncenter {
+  margin-bottom: 1.2em;
+}
+/*リスト設定*/
+.blog_content > div ul,
+.blog_content > div ol {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.blog_content > div ul ul,
+.blog_content > div ul ol,
+.blog_content > div ol ul,
+.blog_content > div ol ol {
+  margin-top: 0;
+}
+.blog_content > div ol {
+  counter-reset: number;
+}
+.blog_content > div ul li:before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+.blog_content > div ol li:before {
+  counter-increment: number;
+  content: counter(number) ".";
+  position: absolute;
+  left: 0;
+}
+.blog_content > div ul li,
+.blog_content > div ol li {
+  position: relative;
+  line-height: 1.5;
+  padding: 10px 0 0 25px;
+}
+/*整形済みテキスト*/
+.blog_content > div pre {
+  font-family: "游ゴシック体", "Yu Gothic", "YuGothic", "ヒラギノ角ゴシック Pro",
+    "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo, Osaka", "ＭＳ Ｐゴシック",
+    "MS PGothic", "sans-serif";
+  font-weight: 400;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #7f7f7f;
+  overflow: auto;
+}
+/*引用*/
+.blog_content > div blockquote {
+  position: relative;
+  color: #3f3f3f;
+  margin-top: 20px;
+  padding: 20px 20px 20px 70px;
+  background-color: #f2f2f2;
+}
+.blog_content > div blockquote::before {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: "icomoon";
+  content: "\e909";
+  font-size: 3rem;
+  color: #d9d9d9;
+}
+.blog_content > div blockquote *:first-child {
+  margin-top: 0;
+}
+/*ライン*/
+.blog_content > div hr {
+  margin-top: 40px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #e5e5e5;
+}
+.blog_content > div *:first-child {
+  margin-top: 20px;
+}
+/*テーブル*/
+.blog_content > div table {
+  margin-top: 20px;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+.blog_content > div table tr:nth-child(2n + 1) {
+  background: #f2f2f2;
+}
+.blog_content > div table th {
+  padding: 10px;
+  background: #323232;
+  color: #fff;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.blog_content > div table td {
+  padding: 10px;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+/*==================================================================
+
+	見出しタグ修正
+
+==================================================================*/
+.blog_box h1 {
+  font-size: 32px;
+}
+.blog_box h4 {
+  font-size: 16px;
+}
+.blog_box h5 {
+  font-size: 12px;
+}
+.blog_box h6 {
+  font-size: 10px;
+}
+.blog_tit {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+  border-bottom: 2px dotted #e2e2e2;
+  letter-spacing: 0.15em;
+  line-height: 1.4;
+  font-size: 26px;
+  font-family: "秀英角ゴシック銀 B";
+  text-align: left;
+}
+.blog_tit::before {
+  position: relative;
+  top: 6px;
+  display: inline-block;
+  height: 32px;
+  width: 4px;
+  margin-right: 12px;
+  background: #eb5514;
+  content: "";
+}
+.blog_box h4 {
+  display: inline-block;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid;
+  letter-spacing: 0.12em;
+  font-size: 20px;
+  color: #eb5514;
+  font-family: "秀英角ゴシック銀 B";
+}
+.blog_box h5 {
+  position: relative;
+  padding-top: 8px;
+  font-family: "秀英角ゴシック銀 B";
+  font-size: 18px;
+  letter-spacing: 0.12em;
+}
+.blog_box h5::before {
+  position: relative;
+  top: -5px;
+  margin-right: 8px;
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  background: #ef7e0b;
+  content: "";
+}
+/*==================================================================
+
+	物件検索
+
+==================================================================*/
+.tb03 th {
+  background: #f7f7f7;
+}
+.tb03 td,
+.tb03 th {
+  padding: 2% 4% !important;
+  box-sizing: border-box;
+}
+.tb03 th {
+  width: 30%;
+}
+.pref label {
+  display: block;
+  width: 180px;
+  padding: 9px 0;
+  background-color: #fff;
+  border: 2px solid #eb5514;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #eb5514;
+}
+.pref .flexbox01 {
+  width: 80%;
+}
+.flexbox01 li:first-child label,
+.flexbox01 li:nth-child(2) label {
+  margin-bottom: 24px;
+}
+input[type="button"] {
+  -webkit-appearance: none;
+}
+.pref input[type="radio"]:checked + label {
+  background-color: #eb5514; /* マウス選択時の背景色を指定する */
+  color: #fff; /* マウス選択時のフォント色を指定する */
+}
+.pref input[type="radio"]:checked + label::before {
+  border: 2px solid #fff;
+}
+.pref input[type="radio"] {
+  display: none;
+}
+.pref input[type="radio"] + label {
+  position: relative;
+}
+.pref input[type="radio"] + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #eb5514;
+  border-radius: 50%;
+}
+pref input[type="radio"] + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #eb5514;
+  border-radius: 50%;
+}
+.pref input[type="radio"]:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  width: 11px;
+  height: 11px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.flexbox01 {
+  display: flex;
+  display: -ms-flex;
+  flex-wrap: wrap;
+}
+.flexbox01 li {
+  margin-right: 3%;
+}
+.flexbox01 li:last-child {
+  margin-right: 0;
+}
+.search_box #s {
+  width: 80%;
+  height: 40px;
+  border: 1px solid #aeaeae;
+  padding-left: 15px;
+}
+input::-webkit-input-placeholder {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic";
+}
+input:-moz-placeholder {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic";
+}
+input::-moz-placeholder {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic";
+}
+input:-ms-input-placeholder {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic";
+}
+.search_box input[name="s"]::placeholder {
+  letter-spacing: 0.2em;
+}
+.search_box i {
+  margin: 0 15px;
+  color: #990000;
+}
+.tb03 .keywords_box td {
+  text-align: left;
+}
+button#search_cheak2 {
+  margin-bottom: 24px;
+  /*padding: 16px 190px 16px 220px;*/
+  padding: 16px 130px;
+  background-color: #3c404c;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+button#search_cheak2:hover {
+  background-color: #646a7a;
+  color: #fff;
+}
+.btn_gra_purple {
+  transition: all 0.3s ease-out;
+}
+.btn_gra_purple:hover {
+  background-color: #555555;
+  color: #fff;
+}
+.bkn_box {
+  display: none !important;
+}
+.info_list {
+  padding: 32px;
+  border: 2px solid #e7e7e7;
+  box-sizing: border-box;
+  margin-bottom: 48px;
+}
+.info_list img {
+  width: 240px;
+  height: auto;
+}
+.info_list div.flexbox {
+  margin-bottom: 20px;
+  display: flex;
+  display: -ms-flex;
+  justify-content: space-between;
+  justify-content: -ms-space-between;
+}
+.info_list .flexbox div:first-of-type {
+  width: 74%;
+}
+.info_list .flexbox div.characteristic {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+.info_list .flexbox div h4.tit01 {
+  padding-top: 0;
+  margin-bottom: 24px;
+}
+.info_list dl {
+  display: flex;
+  display: -ms-flex;
+  /*align-items: center;*/
+  padding: 15px 0;
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 1.3;
+  letter-spacing: 0.15em;
+}
+.info_list dt {
+  width: 100px;
+  padding: 6px 0;
+  margin-right: 16px;
+  border: 1px solid #ea5514;
+  color: #ea5514;
+  line-height: 20px;
+  letter-spacing: 0.1;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info_list dd {
+  padding: 6px 0;
+  width: calc(100% - 100px);
+}
+.info_list dl:first-of-type {
+  padding-top: 0;
+}
+.info_list dl:last-child {
+  border-bottom: none;
+}
+.detail_btn {
+  margin: auto;
+}
+.detail_btn a {
+  display: flex;
+  display: -ms-flex;
+  justify-content: center;
+  justify-content: -ms-center;
+  align-items: center;
+  align-items: -ms-center;
+  width: 195px;
+  height: 54px;
+  margin: 0 auto 0;
+  color: #fff;
+  background-color: #3c404c;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+.detail_btn a:hover {
+  background-color: #646a7a;
+  color: #fff;
+}
+/*.info_list .flexbox02{
+  display: flex;
+	display: -ms-flex;
+}
+
+.flexslider .slides{
+  display: flex;
+	display: -ms-flex;
+  flex-wrap: wrap;
+  flex-wrap: -ms-wrap;
+}
+
+.flexslider .slides li{
+  width: 30%;
+  margin-top: 24px;
+  margin-right: 3%;
+}
+
+.flexslider .slides li a{
+  display: block;
+}*/
+.flexslider .slides li img {
+  width: 100%;
+  height: auto;
+}
+.characteristic {
+  /* margin-bottom: 24px;*/
+  margin-bottom: 20px;
+  /* padding: 1% 3%;*/
+  padding: 3%;
+  background: #eef7f0;
+  font-size: 18px;
+}
+.detail_box .detailInfo td {
+  text-align: left;
+}
+.back_btn {
+  text-align: center;
+}
+/*.back_btn a{
+    width: 310px;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 75px 16px 75px;
+  background-color: #3c404c;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+   box-sizing: border-box;
+}
+
+.back_btn a:hover{
+	background-color: #646A7A;
+	color:#fff;	
+}*/
+.ore_btn {
+  margin-top: 40px;
+  text-align: center;
+}
+.ore_btn a {
+  margin-top: 24px;
+  padding: 16px 80px 16px 80px;
+  background-color: #f19001;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+.ore_btn a:hover {
+  background-color: #995f0a;
+  color: #fff;
+}
+.property_contact_box .tb03 td {
+  text-align: left;
+}
+.cproperty_contact_box td span input[type="text"] {
+  width: 300px;
+  height: 40px;
+  margin-top: 5px;
+}
+.contact-table2 input[name="addr"] {
+  width: 450px;
+  height: 40px;
+}
+.contact-table2 input[name="tel"] {
+  width: 200px;
+  height: 40px;
+}
+.contact-table2 input[name="email"] {
+  width: 450px;
+  height: 40px;
+}
+.contact-table2 input[name="season"] {
+  width: 300px;
+  height: 40px;
+}
+.contact-table2 textarea[name="subject"] {
+  width: 450px;
+  height: 50px;
+}
+.contact-table2 .goodCheck {
+  width: 500px;
+}
+.contact-table2 .goodCheck li {
+  width: 100px;
+}
+.contact-table2 input[type="checkbox"] {
+  margin-right: 5px;
+  border-radius: 4px;
+  border: 1px solid #bebebe;
+  background: #f2f2f2;
+}
+.contact-table2 textarea[name="content"] {
+  width: 450px;
+}
+.cntact_btn_box {
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.property_contact_box .ore_btn input {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f19001;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+  box-sizing: border-box;
+}
+.property_contact_box .ore_btn input:hover {
+  background-color: #995f0a;
+  color: #fff;
+  cursor: pointer;
+}
+/* iOSでのデフォルトスタイルをリセット */
+.property_contact_box .ore_btn input[type="submit"],
+.property_contact_box .ore_btn input[type="button"] {
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.property_contact_box .ore_btn input[type="submit"]::-webkit-search-decoration,
+.property_contact_box .ore_btn input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+.property_contact_box .ore_btn input[type="submit"]::focus,
+.property_contact_box .ore_btn input[type="button"]::focus {
+  outline-offset: -2px;
+}
+.accordion .tb03 tr:last-child td {
+  text-align: left;
+}
+/*新着表示*/
+.blog_information,
+.column_box {
+  display: none;
+}
+/*動画埋め込み用*/
+.movie {
+  /*margin: 75px auto 50px;*/
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.movie iframe {
+  width: 720px;
+  height: 475px;
+}
+/*210629・修正*/
+/*.wpcf7-mail-sent-ok,.wpcf7-response-output{
+display:none!important
+}*/
+.top_information {
+  display: none;
+}
+.flex-direction-nav a:before {
+  line-height: 40px;
+}
+.flex-direction-nav a {
+  border: none !important;
+}
+.detail_box2 h4.tit01 {
+  margin-bottom: 20px;
+}
+.detail_images {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.ricoh-theta-tour-image {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.detail_images_map {
+  margin-left: 10px;
+  width: calc(50% - 10px);
+}
+.detail_images_map_box {
+  height: calc(100% - 50px);
+}
+.detail_images_map_box p {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.detail_images_map_box p:before {
+  content: "";
+  display: block;
+  padding-top: 66%;
+}
+.detail_images_map_box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.topics_list_inner {
+  display: flex;
+  padding: 20px 40px;
+  border-bottom: 1px dotted #cdcdcd;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+    "Meiryo", Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
+}
+.bg_gray .breadcrumbs {
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+.bg_gray #contents_left {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+.topics_list_tit {
+  width: 70%;
+  margin-right: 2%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  text-align: left;
+}
+.blog_content .tb02 th,
+.blog_content .tb02 td {
+  border-right: 1px solid #e5e5e5 !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+.blog_content > div .tb02 th *:first-child {
+  margin-top: 0;
+}
+.blog_content > div .tb02 td *:first-child {
+  margin-top: 10px;
+}
+.blog_content .tb02 .wpcf7-list-item {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 640px) {
+  /* スマホ */
+  .topics_list_inner {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .topics_list_tit {
+    width: 100%;
+    margin-top: 15px;
+    margin-right: 0;
+    white-space: normal;
+    order: 2;
+  }
+  .bg_gray #contents {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .bg_gray .pager {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .characteristic {
+    margin-bottom: 20px;
+  }
+  .detail_images {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .detail_images_map {
+    margin-left: 0;
+  }
+  /*.detail_images_map {
+    position: relative;
+    width: 100%;
+}
+.detail_images_map:before {
+    content:"";
+    display: block;
+    padding-top: 100%;
+}
+.detail_images_map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+  .detail_box2 h4.tit01 {
+    margin-bottom: 10px;
+  }
+  button#search_cheak2 {
+    width: 100%;
+    padding: 3%;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+  .search_box .tb03 th,
+  .search_box .tb03 td {
+    display: block;
+    width: 100%;
+  }
+  .tb03 td,
+  .tb03 th {
+    padding: 4% 2% !important;
+  }
+  .flexbox01 li {
+    margin-right: 0;
+    width: 48%;
+  }
+  .pref .flexbox01 {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .pref label {
+    width: 100%;
+    padding-left: 12%;
+  }
+  .pref input[type="radio"] + label::before {
+    top: 11px;
+  }
+  .search_box #s {
+    width: 100%;
+  }
+  .info_list {
+    padding: 4%;
+  }
+  .info_list div.flexbox {
+    flex-wrap: wrap;
+  }
+  .info_list div.flexbox p.sp_mb20 {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .info_list div.flexbox p.sp_mb20,
+  .info_list .flexbox div:first-of-type {
+    width: 100%;
+  }
+  .info_list dl {
+    flex-wrap: wrap;
+  }
+  .detail_btn a {
+    height: 44px;
+    margin-bottom: 8px;
+  }
+  .flexslider .slides {
+    justify-content: space-between;
+  }
+  /*.flexslider .slides li{
+    width: 48%;
+    margin-right: 0;
+  }*/
+  .contents_bg01_02 .tb03 {
+    padding-bottom: 1px;
+  }
+  .contents_bg01_02 .tb03 th,
+  .contents_bg01_02 .tb03 td {
+    display: block;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .cntact_btn_box input[type="submit"],
+  input[type="button"] {
+    width: 100%;
+    /* padding: 3%!important;*/
+    box-sizing: border-box;
+    font-size: 18px !important;
+  }
+  .cntact_btn_box:last-child input {
+    margin: 0;
+  }
+  #contents_left {
+    width: 100% !important;
+    margin: 0 auto 48px !important;
+  }
+  .tb03 textarea,
+  .tb03 textarea[name="content"],
+  .tb03 input,
+  .tb03 input[name="tel"],
+  .tb03 input[name="email"] {
+    width: 100% !important;
+  }
+  .side_area {
+    float: none;
+    width: 100%;
+    margin: auto;
+  }
+  .blog_box {
+    /*margin: 0 6% 40px;*/
+    margin: 0 3% 40px;
+  }
+  .blog_content p {
+    margin-top: 8px;
+  }
+  .blog_btn a,
+  .blog_tit {
+    word-break: break-all;
+  }
+  .info_box {
+    width: 88%;
+    margin: auto;
+  }
+  #contents_left .box {
+    padding: 0 0 8%;
+  }
+  h3.tit01 span {
+    font-family: "KiroW01-ExtraBold", sans-serif;
+  }
+  .pref input[type="radio"]:checked + label::after {
+    top: 15px;
+    left: 18px;
+  }
+  .cntact_btn_box input[type="submit"] {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+    max-width: 100%;
+  }
+  .tb03 .class input[type="radio"] {
+    width: 10px !important;
+  }
+  /*動画埋め込み用*/
+  .movie {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+  }
+  .movie iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .info_list img {
+    width: 100%;
+  }
+  .info_list dd {
+    width: 100%;
+  }
+  .search_box {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .ricoh-theta-tour-image {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .detail_images_map {
+    margin-left: 0;
+    width: 100%;
+  }
+  .detail_images_map_box p:before {
+    padding-top: 100%;
+  }
+  .blog_tit {
+    /*font-size: 20px;*/
+    font-size: 16px;
+  }
+  .blog_tit::before {
+    height: 24px;
+  }
+  .blog_content .tb02 th,
+  .blog_content .tb02 td {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .blog_content .tb02 tbody {
+    width: 100%;
+  }
+  .blog_content .tb02 td {
+    padding: 10px !important;
+  }
+  .blog_content .tb02 input,
+  .blog_content .tb02 textarea {
+    width: 100% !important;
+  }
+  .blog_content .tb02 input[type="checkbox"] {
+    width: auto !important;
+  }
+  .blog_content .contact_box.box2 {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .pref label {
+    font-size: 14px;
+  }
+  .pref input[type="radio"] + label::before {
+    width: 16px;
+    height: 16px;
+  }
+  .blog_content {
+    margin: 5%;
+  }
+  .back_btn a {
+    padding: 5% 12%;
+  }
+  .pref input[type="radio"]:checked + label::after {
+    width: 8px;
+    height: 8px;
+  }
+}
