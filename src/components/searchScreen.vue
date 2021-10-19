@@ -19,11 +19,9 @@ export default Vue.extend({
     };
   },
   methods: {
-    serch: function () {
+    search: function () {
       this.$emit('search', this.keyword);
     },
   },
 });
 </script>
-
-<style scoped></style>

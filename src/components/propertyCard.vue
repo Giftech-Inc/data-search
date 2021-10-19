@@ -1,12 +1,16 @@
 <template>
-  <div class="property-card">物件名：{{ name }} 最寄り駅：{{ location }}</div>
+  <div>
+    <p>物件名：{{ property.name }}</p>
+    <p>最寄り駅：{{ property.location }}</p>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import Property from '../models/Property';
 
 export default Vue.extend({
-  props: { env: String, state: String },
+  props: { property: Property },
   data: function () {
     return {
       keyword: '',
