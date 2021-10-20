@@ -4,7 +4,7 @@ export const getPropertyList = () => {
   let propertyList: Property[] = [];
   const properties = [
     {
-      name: '北区同心点',
+      name: '北区同心店',
       location: '大阪市北区同心2-5-13',
     },
     { name: 'キリン堂 新大阪宮原店', location: '大阪市淀川区宮原4-2-21' },

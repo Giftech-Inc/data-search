@@ -12,7 +12,7 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  props: { env: String, state: String },
+  props: {},
   data: function () {
     return {
       keyword: '',
@@ -25,3 +25,8 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style scoped>
+.search-screen {
+}
+</style>

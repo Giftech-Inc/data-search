@@ -1,7 +1,13 @@
 <template>
   <div v-if="property.name.indexOf(keyword) !== -1">
-    <p>物件名：{{ property.name }}</p>
-    <p>最寄り駅：{{ property.location }}</p>
+    <div class="property-name">物件名：{{ property.name }}</div>
+    <div class="property-image">
+      <img
+        src="https://www.kirindo-shop.com/manage/shop/images/mod_side-bnr01.jpg"
+        :alt="property.name"
+      />
+    </div>
+    <div class="property-location">住所：{{ property.location }}</div>
   </div>
 </template>
 
@@ -20,4 +26,13 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.property-name {
+  background-color: coral;
+  font-size: 18pt;
+}
+
+.property-location {
+  background-color: lightgray;
+}
+</style>

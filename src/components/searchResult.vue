@@ -42,4 +42,8 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.property-card {
+  margin: 10px auto;
+}
+</style>
