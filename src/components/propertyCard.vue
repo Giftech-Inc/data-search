@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="property.name.indexOf(keyword) !== -1">
     <p>物件名：{{ property.name }}</p>
     <p>最寄り駅：{{ property.location }}</p>
   </div>
@@ -10,12 +10,8 @@ import Vue from 'vue';
 import Property from '../models/Property';
 
 export default Vue.extend({
-  props: { property: Property },
-  data: function () {
-    return {
-      keyword: '',
-    };
-  },
+  props: { property: Property, keyword: String },
+
   methods: {
     serch: function () {
       this.$emit('search', this.keyword);

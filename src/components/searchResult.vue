@@ -1,18 +1,17 @@
 <template>
   <div id="search-result">
     <h2>物件一覧</h2>
-    <h3 v-if="'searchWord.length' === 0">
+    <h3 v-if="keyword !== ''">
       <!-- 再レンダリングされるようにしないとだめ -->
-      検索条件：{{ searchWord }}{{ searchWord.length }}
+      検索条件：{{ keyword }}
     </h3>
     <div class="property-list">
-      {{ searchWord }}
       <div
         class="property-card"
         v-for="property in propertyList"
         :key="property.name"
       >
-        <property-card :property="property"></property-card>
+        <property-card :property="property" :keyword="keyword"></property-card>
       </div>
     </div>
   </div>
@@ -26,15 +25,20 @@ import propertyCard from './propertyCard.vue';
 export default Vue.extend({
   props: {
     propertyList: [Property],
-    searchWord: String,
+    keyword: String,
   },
   components: {
     'property-card': propertyCard,
   },
   created: function () {
-    console.log(this.searchWord === '');
+    console.log(this.keyword === '');
   },
   methods: {},
+  watch: {
+    keyword: function () {
+      console.log(this.keyword);
+    },
+  },
 });
 </script>
 

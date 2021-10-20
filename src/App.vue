@@ -4,7 +4,7 @@
     <search-screen @search="search"></search-screen>
     <search-result
       :propertyList="propertyList"
-      :searchWord="searchWord"
+      :keyword="keyword"
     ></search-result>
     <footer-screen></footer-screen>
   </div>
@@ -23,7 +23,7 @@ export default Vue.extend({
     const propertyList = getPropertyList();
     return {
       propertyList,
-      searchWord: '',
+      keyword: '',
     };
   },
   components: {
@@ -34,7 +34,7 @@ export default Vue.extend({
   },
   methods: {
     search: function (word: string) {
-      this.searchWord = word;
+      this.keyword = word;
     },
   },
 });
